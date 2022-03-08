@@ -6,7 +6,7 @@ ADD ./pom.xml pom.xml
 ADD ./src src/
 
 # package jar
-RUN mvn clean package
+RUN mvn clean install -U
 # Second stage: minimal runtime environment
 From openjdk:8-jre-alpine
 # copy jar from the first stage
