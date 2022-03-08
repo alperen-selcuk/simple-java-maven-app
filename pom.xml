@@ -52,7 +52,7 @@
           <execution>
             <id>enforce-maven</id>
             <goals>
-              <goal>display-info</goal>
+              <goal>enforcer</goal>
             </goals>
             <configuration>
               <rules>
